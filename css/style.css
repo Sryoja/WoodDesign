@@ -1,0 +1,387 @@
+@font-face {
+	font-family: val;
+	src:url(../fonts/val.ttf);
+}
+body{
+	background: url(../img/wood.png);
+	background-attachment: fixed;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrapper{
+	max-width: 948px;
+	background-color: #fff;
+	margin: 0 auto;
+
+/* ----------- header ---------- */
+
+	}
+	body *{
+	font-family: 'Arial', sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	color: #b8b8b8;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+h1 {
+	font-size: 32px;
+	font-family: val;
+	color: #BC8A59;
+	font-weight: bold;
+	float:left;
+	margin: 34px 0;
+}
+.header-top{
+	margin: 48px 30px 0;
+	border-bottom: 1px solid #eeeeee;
+}
+.header-top h1:before {
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+	margin-right: 10px;
+	content:'';
+	background-image: url(../img/logo.png);
+	background-size: 100% ;
+}
+.topnav {
+	float:right;
+	margin: auto 0;
+}
+.topnav a {
+	color: #b8b8b8;
+	font-size: 14px;
+	text-decoration: none;
+	display: block;
+}
+li .active{
+	color: #BC8A59;
+}
+.topnav li{
+	display: inline-block;
+	padding: 42px 20px;
+	}
+.topnav li a:hover{
+	color: #BC8A59;
+	}
+.header-bottom a{
+	text-decoration: none;
+	color: #BC8A59;
+}
+.header-bottom{
+	border-bottom: 1px solid #eeeeee;
+	margin: 0 30px 0px;
+	padding: 20px 0;
+}
+.header-bottom span{
+	line-height: 30px;
+}
+
+/*--------------- main --------------*/
+.wrapper-main{
+	margin: 40px 30px 0 30px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+/* ---------------- right menu ---------- */
+
+.rightnav{
+	float: right;
+	max-width: 33%;
+}
+.twit{
+	position: relative;
+	max-width: 80%;
+	line-height: 25px;
+}
+
+.bird, .follow{
+	font-size: 13px;
+}
+
+.bird{
+	padding-top:30px ;
+}
+
+.bird span{
+	float:right;
+	margin-right: 10px;
+}
+
+.follow{
+	border-radius: 5px;
+	padding: 15px;
+	background-color: #F4F4F4;
+	position: relative;
+}
+.tail{
+	position: absolute;
+	border-top:20px solid #F4F4F4;
+	border-left:15px solid transparent;
+	width: 10px;
+	top: 100%;
+	right: 20%;
+}
+.rightnav img{
+	position: absolute;
+	right: -40px;
+	top: calc(100% - 35px);
+}
+
+.second-nav{
+	max-width: 80%;
+}
+.rightmenutop, .rightmenubottom, .second-nav h2{
+	padding: 10px 15px;
+}
+.rightmenutop li a{
+	font-size: 13px;
+	text-decoration: none;
+}
+.rightmenutop li a:hover{
+	color: #393e40;
+}
+.rightmenutop li{
+	padding: 5px 0;
+	border-bottom: 1px solid #eeeeee;
+}
+.rightmenutop li:first-child{
+	border-top: 1px solid #eeeeee;
+}
+.second-nav h2{
+	color: black;
+}
+.rightmenubottom li{
+	padding-bottom: 10px;
+}
+
+/* ---------- main ------------- */
+
+main{
+	overflow: hidden;
+}
+.mainitems .item:hover img{
+	border: 4px solid #c4c4c4;
+}
+.mainitems .item:hover h3{
+	color: black;
+}
+.item{
+	margin-right: 30px;
+	margin-bottom: 15px;
+	
+	
+	width: calc(50% - 30px);
+	float:left;
+}
+.item h3, .item p{
+	line-height: 25px;
+}
+.item p{
+	font-size: 13px;
+}
+.item h3{
+	padding-top: 10px;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.item a img{
+	display: block;
+	width: 100%;
+	border: 4px solid #EBEBEB;
+	border-radius: 5px;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.bottombtn{
+	clear: both;
+	float:right;
+	margin-top: 5px;
+	display: inline-block;
+	margin-right: 40px;
+}
+.bottombtn a{
+	text-align: center;
+	min-width: 100px;
+	display: inline-block;
+	padding: 7px;
+	color: #fff;
+	text-decoration: none;
+	background-color: #939393;
+	border:0.5px solid #939393;
+	border-radius: 3px;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.bottombtn a:hover{
+	color: #EBEBEB;
+	background-color: #BC8A59;
+}
+
+/* ---------------- footer ---------------- */
+footer{
+	margin-bottom: 48px;
+	padding: 20px 30px 15px;
+}
+.copyright {
+	float: left;
+}
+.copyright span{
+	display: block;
+	font-size: 12px;
+	padding: 15px 0;
+}
+.social{
+	float:right;
+}
+.social .flickr, .social .twitter{
+	display: inline-block;
+}
+.social .flickr a *, .social .twitter a *{
+	float: left;
+}
+.social a{
+	text-decoration: none;
+	display: block;
+}
+.social a:hover span{
+	color: #393e40;
+}
+
+.social a span {
+	display: block;
+	font-size: 12px;
+	padding: 15px 0 15px 10px;
+}
+.social a img{
+	width: 40px;
+	height: 40px;
+}
+/*-------------- menu btn -------------*/
+
+.menutoggle{
+	padding: 5px;
+	font-size: 18px;
+	display: none;
+	cursor: pointer;
+}
+.menutoggle:hover{
+	color: #BC8A59;
+}
+
+/*-------------------------------------*/
+
+@media screen and (max-width: 840px){
+	.rightnav{
+		float: none;
+		max-width: 100%;
+	}
+	.rightnav .second-nav>h2{
+		border-top: 1px solid #eeeeee;
+	}
+	.rightnav .second-nav ul{
+		padding: 0;
+	}
+	.rightnav .second-nav{
+		margin-top: 10px;
+	}
+	.twit{
+		max-width: 90%;
+	}
+	.bird{
+		padding-top:20px ;
+	}
+	.second-nav{
+		max-width: 100%;
+		text-align: center;
+	}
+		.header-top{
+		margin-top: 0;
+	}
+		header .header-top{
+		text-align: center;
+	}
+	header .header-bottom{
+		padding: 10px 0;
+	}
+	header .header-bottom span{
+		font-size: 13px;
+	}
+	header .header-top h1, header .topnav{
+		float:none;
+		width: 100%;
+	}
+	header .header-top h1{
+		margin: 0;
+		padding: 20px 0;
+	}
+	header .topnav ul li{
+		padding: 10px 20px;
+	}
+	header .topnav{
+		border-top: 1px solid #eeeeee; 
+	}
+	.wrapper-main{
+		margin: 10px 10px 0;
+	}
+	.mainitems{
+		padding-bottom: 20px;
+		padding-top: 20px;
+		border-top: 1px solid #eeeeee;
+	}
+	.mainitems .item{
+		margin-right: 10px;
+		width: calc(50% - 10px);
+	}
+		footer{
+		margin-bottom: 0;
+		text-align: center;
+		padding: 5px 0
+	}
+	footer .social, footer .copyright{
+		float: none;
+	}
+	footer .copyright span{
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width: 540px){
+
+	.mainitems .item{
+		float: none;
+		width:calc(100% - 10px);
+		border-bottom: 1px solid #eeeeee;
+	}
+
+	.topnav ul{
+		display: none;
+		position: absolute;
+		background-color: #fff;
+		width:100%;
+	}
+	.topnav ul li{
+
+		display: block;
+		border-top: 1px solid #eeeeee;
+	}
+	.topnav .menutoggle{
+		display: block;
+	}
+	.topnav{
+		position: relative;
+	}
+	
+}
+@media screen and (max-width: 340px){
+	header h1{
+		font-size: 30px;
+	}
+}
